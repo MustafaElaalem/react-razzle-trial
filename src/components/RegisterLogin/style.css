@@ -1,0 +1,20 @@
+.RegisterLoginContainer {
+    font-family: cursive;
+    margin   : auto;
+    max-width: 500px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    min-height: 300px;
+    margin-top: 60px;
+}
+
+
+/*********************************/
+.register-form {
+    /* background-color: aliceblue; */
+}
+
+.login-form .footer{
+    margin:0 auto;
+    width: 42%;
+}

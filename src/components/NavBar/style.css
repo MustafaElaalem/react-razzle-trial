@@ -1,0 +1,33 @@
+.nav-item.nav-link {
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.logo-image-nav-bar {
+  height: 7.5vh;
+  position: inherit;
+  padding: 0.1em;
+  border-radius: 14px;
+  border-width: 5px;
+  border-color: blanchedalmond;
+  border: solid;
+}
+
+nav {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: white;
+}
+
+.navbar-brand{
+  margin: auto !important;
+}
+.navbar-toggler{
+  justify-content: center;
+}
+/* .navbar-brand a:hover{
+  
+} */
+
+
+

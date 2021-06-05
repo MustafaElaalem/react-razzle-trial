@@ -1,0 +1,67 @@
+/*Whole page style (header-content-footer)*/
+.page-content{
+  font-family: cursive;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  /* height: 90vh; */
+  flex-wrap: wrap;
+}
+/**/
+
+/*Start header text content home page*/
+.head-content {
+  margin: 6vh 0;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.header-text-home-page{
+  margin: 0;
+}
+
+/*End header text content home page*/
+
+/*Start content of home page*/
+.lost-part,
+.found-part {
+  justify-content: space-around;
+}
+.main{
+  display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.announcement-card{
+  border: solid 2px !important;
+  border-radius: 1.5rem !important;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  background-color: cadetblue !important;
+  color: black !important;
+  border-color: black !important;
+}
+.announcement-card:hover{
+  background-color: cornflowerblue !important;
+}
+
+.side-card{
+  border: solid 2px;
+  margin: 0.5em;
+}
+.lost-card{
+  background-color: orange;
+}
+.found-card{
+  background-color: rgb(7, 189, 7);
+}
+@media screen and (max-width: 768px){
+  .main{
+    flex-flow: column;
+  }
+}
+
+/*End content of home page*/

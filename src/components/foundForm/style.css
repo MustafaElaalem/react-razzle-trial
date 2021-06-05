@@ -1,0 +1,136 @@
+/* multi-step-finding-form */
+.multi-step-finding-form{
+  padding: 2vh;
+}
+
+/** PROGRESS BAR **/
+.progressbar-wrapper {
+    width: 75%;
+    background-color: #343a40;
+    border-radius: 2.5vw;
+    margin-bottom: 5vh;
+  }
+  ol.progressbar {
+    counter-reset: step;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    /* width: fit-content; */
+    margin: 1em;
+    margin-bottom: 0;
+  }
+  ol.progressbar li {
+    list-style-type: none;
+    /* float: left; */
+    /* display: flex;
+    justify-content: space-between; */
+    width: 33%;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* ol.progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+  } */
+
+  /* ol.progressbar li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+  } */
+  ol.progressbar li:first-child:after {
+    content: none;
+  }
+  ol.progressbar li.active {
+    color: black;
+  }
+  ol.progressbar li.active:before {
+    /* border-color: white; */
+    background-color: white;
+    color: white;
+    border-color: white;
+  }
+  
+  ol.progressbar li.active + li:after {
+    background-color: white;
+  }
+  
+  ol.progressbar li h2, ol.progressbar li p{
+    font-size: 0.8em;
+    color:white;
+
+  }
+  
+  ol.progressbar li h2{
+    margin-top: 1em;
+  }
+
+  ol.progressbar li span.step-counter{
+    background:cornflowerblue;
+    border-radius: 50% 0 50% 0;
+    font-weight: bolder;
+    padding: 0.5em;
+  }
+
+  ol.progressbar li span.step-counter:hover{
+    cursor: pointer;
+    border: solid;
+    border-width: 0.1em;
+  }
+  ol.progressbar li span.step-counter.active{
+    color: black;
+    background-color: lightgray;
+    
+  }
+ 
+
+
+  .multi-form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* Form control */
+  input.form-control{
+    width: 98%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+  label.form-label{
+    position: relative;
+    top: -15px;
+    left: 12px;
+    background: white;
+  }
+  .input-group{
+    width: 95% !important;
+    margin: auto !important;
+  }
+
+  .form-control-div{
+    border-radius: 0.8vw;
+    border-width: thick;
+    border: solid;
+    border-color: darkgray;
+  }
+
+  .form-select, .input-group-text{
+    min-width: 15vw;
+  }
