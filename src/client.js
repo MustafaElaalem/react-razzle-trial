@@ -6,10 +6,13 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 
+
 hydrate(
+ 
   <BrowserRouter>
     <App />
-  </BrowserRouter>,
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 

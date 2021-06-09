@@ -2,10 +2,11 @@
 //https://codesandbox.io/s/customizable-bootstrap-navbar-b1xix?file=/src/components/Customizable.js
 
 import React, { useRef, useState } from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-function NavBar() {
+function NavBar(props) {
   const headerNavRef = useRef();
   const [state, setState] = useState({
     menu: false,
@@ -97,6 +98,7 @@ function NavBar() {
             <Link to="/RegisterLogin" className="nav-item nav-link btn btn-secondary mr-2">
               Register/Login
             </Link>
+            <label htmlFor="">Count = {props.count}</label>
             <Link to="#" className="nav-item nav-link btn btn-info mr-2">
               عربي
             </Link>
@@ -152,4 +154,10 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+const mapStateToProps = (state) => {
+  console.log(state);
+  return {
+    count: state.countReduce.count,
+  };
+};
+  export default connect(mapStateToProps)(NavBar);
